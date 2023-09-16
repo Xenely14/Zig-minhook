@@ -1,5 +1,4 @@
 const builtin = @import("builtin");
-const std = @import("std");
 
 const minhook = switch (builtin.cpu.arch) {
     .x86 => struct {
