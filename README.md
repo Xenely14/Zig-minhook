@@ -4,7 +4,7 @@ This library use original minhook library, download binary dependencies before u
 You can find minhook dependencies in `dependencies` folder of this repository.
 - - - 
 # Installation
-1. Intall `Zig-minhook`.</br>
+1. Install `Zig-minhook`.</br>
     Clone this repository or download it as archive file.
 
 2. Put minhook `dll's` files into folder with your built binary.</br>
