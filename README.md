@@ -40,7 +40,7 @@ pub fn main() void {
     // If you don't want to use original function you just can pass `null` at the last argument.
     var hook_created = minhook.createHook(&MessageBoxA, &MessageBoxADetour, @ptrCast(&MessageBoxAOriginal));
 
-    // Or you can just use `minhook.enableHook(minhook.MH_ALL_HOOKS)` or `minhook.enableHook(minhook.null) to enable all hooks at once.`
+    // Or you can just use `minhook.enableHook(minhook.MH_ALL_HOOKS)` or `minhook.enableHook(null) to enable all hooks at once.`
     var hook_enabled = minhook.enableHook(&MessageBoxA);
 
     std.debug.print("hook inited -> {s}\n", .{@tagName(hook_inited)});
